@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Mozg. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <carriers>
+            <mozg_correios>
+                <!-- BASE -->
+                <model>Mozg\Correios\Model\Correios\Carrier</model>
+                <active>0</active>
+                <sort_order>0</sort_order>
+                <title>Correios (powered by MOZG)</title>
+                <allowed_methods>40010,40215,40169,40290,40045,41106,10014,10030,16012,20010,14010,44105,41262,43010,40819</allowed_methods>
+                <free_method></free_method>
+                <!--<max_package_weight>30</max_package_weight>-->
+                <handling_type>F</handling_type>
+                <handling_action>O</handling_action>
+                <handling_fee>1</handling_fee>
+                <showmethod>1</showmethod>
+                <debug>1</debug>
+                <sallowspecific>1</sallowspecific>
+                <specificcountry>BR</specificcountry>
+                <!-- DEFAULT -->
+                <formato>1</formato>
+                <prazo_entrega>1</prazo_entrega>
+                <msgprazo>%s - Em média %d dia(s)</msgprazo>
+                <display_result_error>1</display_result_error>
+                <active_tracking>1</active_tracking>
+            </mozg_correios>
+            <mozg_correios_exportafacil>
+                <!-- BASE -->
+                <model>Mozg\Correios\Model\CorreiosExportaFacil\Carrier</model>
+                <active>0</active>
+                <sort_order>0</sort_order>
+                <title>Correios Exporta Fácil (powered by MOZG)</title>
+                <allowed_methods>110,128,209</allowed_methods>
+                <free_method></free_method>
+                <!--<max_package_weight>30</max_package_weight>-->
+                <handling_type>F</handling_type>
+                <handling_action>O</handling_action>
+                <handling_fee>1</handling_fee>
+                <showmethod>1</showmethod>
+                <debug>1</debug>
+                <sallowspecific>1</sallowspecific>
+<specificcountry>XA,AF,ZA,AL,DE,AD,AO,AI,AG,AN,SA,DZ,AR,AM,AW,XB,AU,AT,AZ,BS,BH,BD,BB,BY,BE,BZ,BJ,BM,BO,BA,BW,BN,BG,BF,BI,BT,CV,CM,KH,CA,XC,QA,KY,KZ,CF,TD,CL,CN,CY,CX,SG,CC,CO,KM,CD,CG,CK,KP,KR,CI,CR,HR,CU,DK,DJ,DM,DO,EG,SV,AE,EC,ER,SK,SI,ES,US,EE,ET,FK,FO,FJ,PH,FI,FR,GA,GM,GH,GE,GS,GI,GB,GD,GR,GL,GP,GU,GT,GG,GY,GF,GN,GW,GQ,HT,HN,HK,HU,YE,XD,IN,ID,IR,IQ,IE,IS,IL,IT,JM,JP,JE,JO,KI,KW,LA,LS,LV,LB,LR,LY,LI,LT,LU,MO,MK,MG,MY,MW,MV,ML,MT,IM,MP,MA,MH,MQ,MU,MR,YT,MX,MM,FM,XG,MZ,MD,MC,MN,MS,ME,NA,NR,NP,NI,NE,NG,NU,NF,NO,NC,NZ,OM,NL,PW,PS,PA,PG,PK,PY,PE,PN,PF,PL,PR,PT,KE,KG,RE,RO,RW,RU,EH,PM,SB,WS,AS,SM,SH,LC,KN,ST,VC,SN,SL,RS,SC,SY,SO,LK,SZ,SD,SE,CH,SR,TJ,TH,TW,TZ,CZ,TF,TP,TG,TO,TK,TT,XE,TN,TC,TM,TR,TV,UA,UG,UY,UZ,VU,VA,VE,VN,VI,VG,XF,WF,ZM,ZW</specificcountry>
+                <!-- DEFAULT -->
+                <estado_origem>SP</estado_origem>
+                <localidade>C</localidade>
+                <formato>1</formato>
+                <prazo_entrega>1</prazo_entrega>
+                <msgprazo>%s - Em média %d dia(s)</msgprazo>
+                <display_result_error>1</display_result_error>
+            </mozg_correios_exportafacil>
+        </carriers>
+    </default>
+</config>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Mozg. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+    <group id="mozg_correios">
+        <job name="mozg_correios_sro" instance="Mozg\Correios\Model\Cron" method="execute">
+            <schedule>* * * * *</schedule>
+        </job>
+    </group>
+</config>

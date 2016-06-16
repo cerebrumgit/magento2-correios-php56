@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Mozg. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Catalog:etc/catalog_attributes.xsd">
+    <group name="quote_item">
+        <attribute name="ship_separately"/>
+        <attribute name="width"/>
+        <attribute name="lenght"/>
+        <attribute name="height"/>
+        <attribute name="girth"/>
+    </group>
+</config>
